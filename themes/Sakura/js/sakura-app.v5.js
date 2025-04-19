@@ -196,7 +196,7 @@ function attach_image() {
                         $('.insert-image-tips').html('<i class="fa fa-picture-o" aria-hidden="true"></i>');
                     }, 1000);
                     var get_the_url = res.data.url;
-                    $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://fastly.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
+                    $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
                     lazyload();
                     addComment.createButterbar("图片上传成功~<br>Uploaded successfully~");
                     grin(res.data.url.replace('https://i.loli.net/', '{UPLOAD}'), type = 'Img');
@@ -374,7 +374,7 @@ $(document).ready(function () {
     $(".skin-menu #dark-bg").click(function () {
         mashiro_global.variables.skinSecter = true;
         mashiro_global.variables.isNight = true;
-        $("body").css("background-image", "url(https://fastly.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png)");
+        $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png)");
         $(".blank").css("background-color", "rgba(255,255,255,.8)");
         $("#night-mode-cover").css("visibility", "visible");
         $(".pattern-center").removeClass('pattern-center').addClass('pattern-center-sakura');
@@ -1045,10 +1045,10 @@ var currentFontIsUbuntu = true;
 
 function changeFont() {
     if (currentFontIsUbuntu) {
-        loadCSS("https://fastly.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
         currentFontIsUbuntu = false;
     } else {
-        loadCSS("https://fastly.jsdelivr.net/gh/moezx/cdn@3.1.8/css/or.css");
+        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/or.css");
         currentFontIsUbuntu = true;
     }
 }
@@ -1057,12 +1057,12 @@ function convertChinese(zh) {
     if (zh == 'cn') {
         $("#zh_cn").css("display", "none");
         $("#zh_tw").css("display", "inline-block");
-        loadCSS("https://fastly.jsdelivr.net/gh/moezx/cdn@3.1.8/css/tw.css");
+        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/tw.css");
     }
     if (zh == 'tw') {
         $("#zh_tw").css("display", "none");
         $("#zh_cn").css("display", "inline-block");
-        loadCSS("https://fastly.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
     }
 }
 */
@@ -1071,8 +1071,8 @@ mashiro_global.ini.normalize();
 loadCSS(mashiro_option.jsdelivr_css_src);
 loadCSS(mashiro_option.entry_content_theme_src);
 loadCSS("https://at.alicdn.com/t/font_679578_qyt5qzzavdo39pb9.css");
-loadCSS("https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css");
-loadCSS("https://fastly.jsdelivr.net/gh/yezhiyi9670/akioi-cdn/fonts/SakuraFonts-v5/part-2.css");
+loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css");
+loadCSS("https://cdn.jsdelivr.net/gh/yezhiyi9670/akioi-cdn/fonts/SakuraFonts-v5/part-2.css");
 (function webpackUniversalModuleDefinition(b, a) {
     if (typeof exports === "object" && typeof module === "object") {
         module.exports = a()
